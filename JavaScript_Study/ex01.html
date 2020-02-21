@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <script>
+        var number = prompt("숫자를 입력하세요");
+        if(number<0){
+            alert("0이상의 수를 입력하세요");
+        }
+        else{
+            document.write("입력한 숫자  " + number);
+        }
+        var input = prompt("점수를 입력하세요");
+        if(input >= 60)
+        {
+            alert("통과"+ input);
+        }
+        else
+        {
+            alert("실패"+ input+ "이기 때문에...");
+        }
+        var score = 75;
+        (score >70) ? alert("굿") : alert("더 노력해라");
+
+        var usernumber = prompt ("숫자를 입력하세요")
+        if(usernumber !=null){
+            document.write(usernumber);
+        }else{
+            alert("입력 취소");
+        }
+       
+    </script>
+</body>
+</html>
