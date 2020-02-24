@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var sum =0;
+        var i = 0;
+        var j =prompt("1~5사이의 숫자를 입력해주세요"); // prompt가 문자열로 받기 때문에
+        //k = Number(j); // 숫자형으로 변환
+        document.write(typeof j +"<br>");
+        i = j;
+        if(i<6){
+            for(i; i <6; i++){
+            sum +=i; // sum= sum+i 를 줄여서 표현됨
+            }
+            document.write(j+"부터 5까지 더하면"+ sum +"<br>"); // 
+        }else{
+            document.write("잘못 입력했습니다");
+        }
+       
+
+    </script>
+    
+</body>
+</html>
