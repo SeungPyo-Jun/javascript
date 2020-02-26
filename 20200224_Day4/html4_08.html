@@ -7,14 +7,58 @@
 </head>
 <body>
     <h2>폼</h2>
-    <form name="myform" method="POST" action="html4_08_ok.php">
+    <form name="myform" method="POST" action="html4_08_ok.php" enctype="multipart/form-data">
         <p>아이디: <input type="text" required></p>
         <p>비밀번호: <input type="password" required></p>
         <p>
-            성별: <label> 남자<input type="radio" name="gender" value="남자" checked required></label> 
-            <label>여자<input type="radio" name="gender" value="여자" required></label>  
+            성별: 
+                <label> 남자<input type="radio" name="gender" value="남자" checked required></label> 
+                <label>여자<input type="radio" name="gender" value="여자" required></label>  
             <!--무조건 value 써야합니다-->
         </p>
+        <p>취미 : 
+            <label>게임 <input type="checkbox" name ="hobby" value="게임"></label>
+            <label>드라이브 <input type="checkbox" name ="hobby" value="드라이브"></label>
+            <label>등산 <input type="checkbox" name ="hobby" value="등산"></label>
+            <label>영화감상 <input type="checkbox" name ="hobby" value="영화감상"></label>
+            <label>골프 <input type="checkbox" name ="hobby" value="골프"></label>
+        </p>
+        <p>첨부파일 : <input type="file" name="file"></p> 
+        <!--폼태그에서 enctype="multipart/form-data" 꼭 써야한다-->
+        <P>
+            <input type="button" value="완료" onclick="alert('클릭 되었습니다')">
+            <input type="submit" value="전송">
+            <input type="reset" value="초기화">
+        </P>
+        <!--HTML5에서 추가된 type 값--> 
+        <p><input type="color" name="color"></p>
+        <p><input type="email" name="email"></p> <!--잘안쓰이는 타입 자바스크립트로 짜는게 맞다 왜냐하면 빈속성으로 넘어가질수있기때문에 자바스크립트로 제한을 걸어서 무조건 내용을 입력할 수 있게 만드는것이 낫다-->
+        <p><input type="url" name="url"></p> <!--잘 안쓴다-->
+        <p><input type="tel" name="hp"></p> <!--모바일에서 볼때 키패드가 나온다-->
+        <p><input type="date" name="sdate"> - <input type="date" name="edate"> </p>
+        <p><input type="number" min="1" max="10" step="1" name="num"></p>
+        <p><input type="range" min="1" max="10" value="3" name="rg"></p>
+        <p><input type="search" name="search"></p>
+        <p>
+            <select name="browsers" multiple="2"> 
+                <!--실제 화면에서 다수 선택할때 드래그 또는 컨트롤누르고 선택-->
+                <option value="#">선택하세요</option>
+                <option value="크롬">크롬</option>
+                <option value="사파리">사파리</option>
+                <option value="엣지">엣지</option>
+                <option value="익스폴로러">익스플로러</option>
+                <option value="파이어폭스">파이어폭스</option>
+                <option value="오페라">오페라</option>
+            </select>
+        </p>
+        <p>
+            <textarea cols="20" rows="5">안녕하세요.</textarea> <!--안녕하세요가 value로 넘어감-->
+        </p>        
+
+
+
+
+
     </form>
 </body>
 </html>

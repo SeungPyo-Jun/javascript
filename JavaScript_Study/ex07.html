@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>input 타입별로 나열</h2>
+    <form>
+        <label for="name">이름</label>
+        텍스트<input type="text" id="name" ><br>
+        버튼<input type="button"><br>
+        체크박스<input type="checkbox"><br>
+        파일<input type="file"><br>
+        히든<input type="hidden"><br>
+        이미지<input type="image"><br>
+        비밀번호<input type="password"><br>
+        레디오<input type="radio"><br>
+        리셋<input type="reset"><br>
+        제출<input type="submit"><br>
+
+        <p>html5에서 새로추가된 input 타입<br></p>
+    
+        색깔<input type="color"><br>
+        날짜<input type="date"><br>
+        날짜시간<input type="datetime"><br>
+        날짜시간 한국기준?<input type="datetime-local"><br>
+        이메일<input type="email"><br>
+        월<input type="month"><br>
+        번호<input type="number"><br>
+        범위<input type="range"><br>
+        검색<input type="search"><br>
+        tel?<input type="tel"><br>
+        time<input type="time"><br>
+        url<input type="url"><br>
+        week<input type="week"><br>
+
+        <select name="hi" id="hi1">
+            <optgroup label="HTML5">
+                <option>Multimedia Tag</option>
+                <option>Connectivity</option>
+                <option>Device Access</option>
+            </optgroup>
+            <optgroup label="CSS3">
+                <option>Animation</option>
+                <option>3D Transform</option>
+                
+            </optgroup>
+        </select>
+
+    </form>
+    <form>
+        <fieldset>
+            <legend>입력방식</legend>
+                <table>
+                    <tr>
+                        <td><label for="name">이름</label></td>
+                        <td><input id="name" type="text"></input></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email"">이메일</label></td>
+                        <td><input id="email" type="email"></input></td>
+                    </tr>
+                </table>
+                <input type="submit">
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+</head>
+<body>
+    <h2>회원가입</h2>
+    <form name="regform" method="POST" action="html5_01_ok.php" enctype="multipart/form-data">
+    <p><label>아이디 : <input type="text" name="userid" required> </label> <input type="button" value="중복확인"> </p>
+    <p><label>비밀번호 : <input type="password" name="userpw" required>  </label></p>
+    <p><label>비밀번호 확인 : <input type="password" name="userpw_re" required></label></p>
+    <p><label>이름 : <input type="text" name="username" required></label></p>
+    <p>
+        <fieldset> 
+            <legend>성별</legend>
+                <label>남자 <input type="radio" value="man" name="gender" checked></label> 
+                <label>여자<input type="radio" value="woman" name="gender"></label>
+        </fieldset>
+    </p>
+    <p>
+        <fieldset> 
+            <legend>취미</legend>
+                <label>등산<input type="checkbox" value="등산"> </label>
+                <label>게임<input type="checkbox" value="게임"> </label>
+                <label>드라이브<input type="checkbox" value="드라이브"> </label>
+                <label>영화감상<input type="checkbox" value="영화감상"> </label>
+                <label>쇼핑<input type="checkbox" value="쇼핑"> </label>
+        </fieldset>
+    </p>
+
+    <p><label>이메일 : <input type="text" name="email" required></label></p>
+    <p><label>주민등록번호 : <input type="text" name="ssn1" maxlength="6" size="6">-<input type="password" name="ssn2" maxlength="7" size="7"> </label></p>
+    <p><label>우편번호 : <input type="text" name="zipcode" required size="5" maxlength="5"></label>&nbsp;<button>검색</button> </p> <!--<input type="button" value="검색">-->
+    <p>주소 : <input type="text" name="address1" required></p>
+    <p>상세주소 : <input type="text" name="address2" required></p>
+    <p>참고항목 : <input type="text" name="address3"></p>
+    <p>휴대폰번호 : 
+        <select name="hp1">
+            <option value="none">선택하세요</option>
+            <option value="010">010</option>
+            <option value="011">011</option>
+            <option value="016">016</option>
+            <option value="017">017</option>
+            <option value="018">018</option>
+            <option value="019">019</option>    
+        </select> -
+        <input type="text" name="hp2" size="4" maxlength="4" required> -
+        <input type="text" name="hp3" required size="4" maxlength="4">
+    </p>
+    <p>관심분야</p>
+    <p>
+        <input type="text" list="interest">
+        <datalist id="interest">
+            <option value="음악" label="멀티미디어"></option>
+            <option value="영화" label="멀티미디어"></option>
+            <option value="사진" label="멀티미디어"></option>
+            <option value="그림" label="멀티미디어"></option>
+        </datalist>
+    </p>
+
+    <p>자기소개 : 
+        <textarea cols="50" rows="6" name="content"></textarea></p>
+    <input type="submit" value="가입완료">
+    <input type="reset" value="새로작성">
+    </form> 
+
+</body>
+</html>
