@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>클래스 선택자</title>
+    <style>
+        /*class 속성값으로 select를 가지는 태그의 color 속성에 red키워드를 적용합니다*/
+        .select{color: red;}
+        .select2{color: blue;}
+        .header{background-color: green;} 
+        /*태그 선택자와 클래스 선택자를 동시에 사용해보자*/
+        li.start{color: greenyellow;}
+    </style>
+</head>
+<body>
+    <h1 class="select header">클래스 중복사용</h1>
+    <ul>
+        <li class="select">lorem ipsum</li>
+        <li>lorem ipsum</li>
+        <li class="select2">lorem ipsum</li>
+        <li class="start">lorem ipsum</li>
+    </ul>
+</body>
+</html>
