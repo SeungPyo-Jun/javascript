@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* table내에서 자손선택자를 사용할 경우에는 tbody를 넣어서 사용해야한다
+        실제로 실행해서 분석해보면 자동으로 tbody를 생성하기때문에....*/
+        table > tbody > tr > th {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>name</th>
+            <th>Region</th>
+        </tr>
+        <tr>
+            <td>윤인성</td>
+            <td>서울특별시 강서구 내발산동</td>
+        </tr>
+    </table>
+</body>
+</html>
