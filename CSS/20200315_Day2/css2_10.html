@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font-size</title>
+    <style>
+        html{ font-size: 20px;}
+        .font-div{font-size: 2em;}
+        .font-p1{font-size: 1em;} 
+        .font-p2{font-size: 1rem;}
+    </style>
+</head>
+<body>
+    <h2>font-size</h2>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe incidunt ea adipisci odio molestiae dolores quas itaque voluptatum ratione veritatis. Ab neque vel obcaecati perspiciatis ducimus dolores modi enim asperiores?</p>
+    </div>
+    <div class="font-div"> <!--2em이 기본글꼴크기가 정해짐 그래서 자식도 1em이 2em으로 변함-->
+        <p class="font-p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta vel adipisci nulla dolor quos voluptatibus. Officiis ratione repellendus, nam eius rerum odio, vero, quo commodi quod eum nulla ducimus quidem?</p>
+    </div>
+    <div class="font-div"> <!--부모의 영향을 받지않아서 기본글꼴이 된다-->
+        <p class="font-p2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta vel adipisci nulla dolor quos voluptatibus. Officiis ratione repellendus, nam eius rerum odio, vero, quo commodi quod eum nulla ducimus quidem?</p>
+    </div>
+</body>
+</html>

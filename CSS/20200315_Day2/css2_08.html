@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text-overflow / white-space / overflow</title>
+    <style>
+        .content{
+            border: 3px solid cornflowerblue;
+            width: 400px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .content:hover{overflow: visible; width: 900px;}
+    </style>
+</head>
+<body>
+    <h2>text-overflow / white-space / overflow</h2>
+    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero reiciendis, obcaecati voluptatum nisi eveniet at veritatis! Corporis quibusdam consectetur perspiciatis, sit laudantium ab dolorem, aut nesciunt assumenda quos excepturi maxime!</p>
+</body>
+</html>
